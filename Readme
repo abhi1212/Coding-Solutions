@@ -1,0 +1,10 @@
+Given integers, count the number of pairs of integers whose difference is K.
+
+Example-
+
+	1 5 3 4 2   and k is 3
+
+	So, we have 2 pairs
+ 
+	(5,2) and (4,1)
+	S our function should return 2. 
