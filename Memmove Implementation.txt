@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+void  myMemMove( void *destination, void *source, size_t num);
+int main()
+{
+   char csrc[100] = "Geeksfor";
+   myMemMove(csrc+5, csrc, strlen(csrc)+1);
+   printf("%s", csrc);
+   return 0;
+}
+
+
+void  myMemMove( void *destination, void *source, size_t num)
+{
+    char * dest= (char*) destination;
+    char * src = (char*) source;
+    
+    char *temp= new char[num];
+    
+    for(int i=0;i<num;i++)
+    {
+        temp[i]=src[i];
+    }
+    
+    
+    for(int i=0;i<num;i++)
+    {
+        dest[i]=temp[i];
+    }
+    
+    
+    
+}    
+    
+    
+ 
