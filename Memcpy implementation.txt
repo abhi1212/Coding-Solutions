@@ -3,7 +3,7 @@ void myMemCpy(void * dest, void * source, size_t num);
 
 int main()
 {
-char csrc[] = "GeeksforGeeks";
+char csrc[] = "Abhishek";
 char cdest[100];
 myMemCpy(cdest, csrc, strlen(csrc)+1);
 printf("Copied string is %s", cdest);
