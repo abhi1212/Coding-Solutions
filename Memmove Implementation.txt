@@ -4,7 +4,7 @@ using namespace std;
 void  myMemMove( void *destination, void *source, size_t num);
 int main()
 {
-   char csrc[100] = "Geeksfor";
+   char csrc[100] = "Abhishek";
    myMemMove(csrc+5, csrc, strlen(csrc)+1);
    printf("%s", csrc);
    return 0;
